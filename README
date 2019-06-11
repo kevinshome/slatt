@@ -21,7 +21,7 @@
     - call functions using "_imightcall"
       - example can be found in examples/functions.slatt
 
-*+how to use slatt development release 001:
+*+how to use the latest slatt development release:
     - clone this git repository ("git clone https://github.com/kevinshome/slatt.git")
     - "python -m slatt 'slatt_file.slatt'"
     - program will then be built by slatt compiler and run
