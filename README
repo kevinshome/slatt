@@ -12,15 +12,15 @@
 
     +_~ https://twitter.com/playboicarti/status/1006241861579804672
 
-*+the latest release of slatt is development release 001:
+*+the latest release of slatt is development release 002:
 
 (in order to use the slatt development releases you must have >= Python 3.7 installed)
 
-*+features:
-    - "+yo pierre()"
-      - equivelant to "print()" in python
-    - function:
-      - prints inputted object on to console
+*+features in this release:
+    - set variables using "^wholelotta>"
+      - example:
+        - "red ^wholelotta 'never'" in slatt == "red = 'never' in python"
+        - (see example file in examples/variables.slatt)
 
 *+how to use slatt development release 001:
     - clone this git repository ("git clone https://github.com/kevinshome/slatt.git")

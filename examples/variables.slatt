@@ -1,0 +1,6 @@
+**slatt!**
+
+red ^wholelotta> "never" #set variable using "{var_name} ^wholelotta> {var_value}"
++yo pierre("wholottared is " + red + " coming out :(") #print to screen
+
+ok!

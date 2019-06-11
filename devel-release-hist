@@ -1,0 +1,11 @@
+development release 001:
+  - "+yo pierre()"
+    - equivelant to "print()" in python
+    - function:
+      - prints inputted object on to console
+
+development release 002:
+  - set variables using "^wholelotta>"
+    - example:
+      - "red ^wholelotta 'never'" in slatt == "red = 'never' in python"
+      - (see example file in examples/variables.slatt)

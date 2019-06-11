@@ -1,4 +1,26 @@
-#slatt development release 001
+#slatt development release
+
+#MIT License
+#
+#Copyright (c) 2019 kevinshome
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
 
 #imports
 import sys
@@ -25,9 +47,15 @@ with open(slatt_file) as slatt:
             sys.exit()
         #prints if "+yo pierre()" is in the line
         if "+yo pierre(" in line:
-            pline = line
-            pline = pline.replace("+yo pierre", "print")
-            os.system("echo '{0}' >> /tmp/hello.py".format(pline))
+            line = line.replace("+yo pierre", "print")
+            os.system("echo '{0}' >> /tmp/hello.py".format(line))
+        #set variables using ^wholelotta>
+        if "^wholelotta>" in line:
+            line = line.replace("^wholelotta>", "=")
+            os.system("echo '{0}' >> /tmp/hello.py".format(line))
 
+#i know this is such a cheap fucking way to do this
+#but like, i'm a shitty programmer
+#i'm sorry :(
 os.system("python /tmp/hello.py")
 os.remove("/tmp/hello.py")
