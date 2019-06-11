@@ -46,16 +46,25 @@ with open(slatt_file) as slatt:
 
             sys.exit()
         #prints if "+yo pierre()" is in the line
+        slatt_file = slatt_file.replace("/", "")
         if "+yo pierre(" in line:
             line = line.replace("+yo pierre", "print")
-            os.system("echo '{0}' >> /tmp/hello.py".format(line))
-        #set variables using ^wholelotta>
+            os.system("echo '{0}' >> /tmp/{1}_slatt.py".format(line, slatt_file))
+        #set variables using "^wholelotta>"
         if "^wholelotta>" in line:
             line = line.replace("^wholelotta>", "=")
-            os.system("echo '{0}' >> /tmp/hello.py".format(line))
+            os.system("echo '{0}' >> /tmp/{1}_slatt.py".format(line, slatt_file))
+        #define functions using "_flex*"
+        if "_flex*" in line:
+            line = line.replace("_flex*", "def ")
+            os.system("echo '{0}' >> /tmp/{1}_slatt.py".format(line, slatt_file))
+        #call function
+        if "_imightcall" in line:
+            line = line.replace("_imightcall ", "")
+            os.system("echo '{0}' >> /tmp/{1}_slatt.py".format(line, slatt_file))
 
 #i know this is such a cheap fucking way to do this
 #but like, i'm a shitty programmer
 #i'm sorry :(
-os.system("python /tmp/hello.py")
-os.remove("/tmp/hello.py")
+os.system("python /tmp/{0}_slatt.py".format(slatt_file))
+os.remove("/tmp/{0}_slatt.py".format(slatt_file))

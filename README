@@ -17,10 +17,9 @@
 (in order to use the slatt development releases you must have >= Python 3.7 installed)
 
 *+features in this release:
-    - set variables using "^wholelotta>"
-      - example:
-        - "red ^wholelotta 'never'" in slatt == "red = 'never' in python"
-        - (see example file in examples/variables.slatt)
+    - define functions using "_flex*"
+    - call functions using "_imightcall"
+      - example can be found in examples/functions.slatt
 
 *+how to use slatt development release 001:
     - clone this git repository ("git clone https://github.com/kevinshome/slatt.git")

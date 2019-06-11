@@ -9,3 +9,8 @@ development release 002:
     - example:
       - "red ^wholelotta 'never'" in slatt == "red = 'never' in python"
       - (see example file in examples/variables.slatt)
+
+development release 003:
+  - define functions using "_flex*"
+  - call functions using "_imightcall"
+    - example can be found in examples/functions.slatt
