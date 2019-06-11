@@ -1,0 +1,5 @@
+**slatt!** # this is reqired at the top of every slatt file
+
++yo pierre("Hello, world!") # outputs "Hello, world!" in console
+
+ok! # this is required at the bottom of every slatt file
