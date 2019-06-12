@@ -26,6 +26,11 @@
 import sys
 import os
 
+#check python version
+pyv = sys.version_info
+if pyv[0] == 2 or pyv[0] == 3 and pyv[1] < 5: #If Python version < 3.5
+    exit("The Slatt Development Release requires >= Python 3.5 :(")
+
 #set slatt filename to var
 global slatt_file
 global line
