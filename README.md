@@ -1,6 +1,4 @@
-=============
-#   slatt   #
-=============
+#slatt esoteric programming language
 
 *+slatt is an esoteric programming language based on the way rapper, "playboi carti", writes tweets.
 
@@ -28,10 +26,12 @@
     - program will then be built by slatt compiler and run
 
 *+"Hello, world!" example:
+```
     1 **slatt!** # this is reqired at the top of every slatt file
     2
     3 +yo pierre("Hello, world!") # outputs "Hello, world!" in console
     4
     5 ok! # this is required at the bottom of every slatt file
+```
 
     (this example can be run with "python -m slatt slatt/examples/hello.slatt")
