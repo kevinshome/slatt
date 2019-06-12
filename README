@@ -12,14 +12,15 @@
 
     +_~ https://twitter.com/playboicarti/status/1006241861579804672
 
-*+the latest release of slatt is development release 003:
+*+the latest release of slatt is development release 004:
 
 (in order to use the slatt development releases you must have >= Python 3.7 installed)
 
 *+features in this release:
-    - define functions using "_flex*"
-    - call functions using "_imightcall"
-      - example can be found in examples/functions.slatt
+    - if/else statements!
+    - user input!
+    - examples of these can be found in "examples/if_else.slatt"
+    - (i also did a bit of a rewrite because this code was a fucking mess, still is, but now less)
 
 *+how to use the latest slatt development release:
     - clone this git repository ("git clone https://github.com/kevinshome/slatt.git")

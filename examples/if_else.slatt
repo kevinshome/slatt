@@ -1,0 +1,10 @@
+**slatt!**
+
+red ^wholelotta> wokeuplike*("type a number: ") #grab number from user input
+
+*!yah red ^iswholelotta> str(1): # if statement (if red == str(1))
+  +yo pierre("true")
+*!nah: #else statement
+  +yo pierre("false")
+
+ok!
