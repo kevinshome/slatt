@@ -1,5 +1,5 @@
 # The Slatt Esoteric Programming Language
-## (devel branch - used for non-binary/development releases)
+#### (devel branch - used for non-binary/development releases)
 
 [![codebeat badge](https://codebeat.co/badges/f5365231-19d4-4825-aeb9-bfe72f30a543)](https://codebeat.co/projects/github-com-kevinshome-slatt-master)
 
