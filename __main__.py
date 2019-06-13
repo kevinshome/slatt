@@ -1,4 +1,4 @@
-#slatt development release
+#the slatt language
 
 #MIT License
 #
@@ -26,12 +26,7 @@
 import sys
 import os
 
-#check python version
-pyv = sys.version_info
-if pyv[0] == 2 or pyv[0] == 3 and pyv[1] < 5: #If Python version < 3.5
-    exit("The Slatt Development Release requires >= Python 3.5 :(")
-
-#set slatt filename to var
+#set slatt filename to var and set globals for later usage
 global slatt_file
 global line
 slatt_file = sys.argv[1]
