@@ -1,1 +1,1 @@
-#slatt development release
+#the slatt language
